@@ -1,0 +1,91 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/modules/*",
+        "./*"
+      ],
+      "@/src/store/*": [
+        "src/modules/shared/store/*"
+      ],
+      "@/src/services/*": [
+        "src/modules/auth/services/*",
+        "src/modules/shared/services/*",
+        "src/modules/user/services/*",
+        "src/modules/notifications/services/*",
+        "src/modules/canchas/services/*"
+      ],
+      "@/src/constants/*": [
+        "src/modules/shared/constants/*",
+        "src/modules/auth/constants/*",
+        "src/modules/feed/constants/*"
+      ],
+      "@/src/hooks/*": [
+        "src/modules/auth/hooks/*",
+        "src/modules/user/hooks/*",
+        "src/modules/shared/hooks/*",
+        "src/modules/canchas/hooks/*",
+        "src/modules/feed/hooks/*",
+        "src/modules/notifications/hooks/*",
+        "src/modules/news/hooks/*"
+      ],
+      "@/src/types/*": [
+        "src/modules/shared/types/*",
+        "src/modules/auth/types/*",
+        "src/modules/user/types/*",
+        "src/modules/canchas/types/*"
+      ],
+      "@/src/data/*": [
+        "src/modules/shared/data/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@auth/*": [
+        "src/modules/auth/*"
+      ],
+      "@user/*": [
+        "src/modules/user/*"
+      ],
+      "@shared/*": [
+        "src/modules/shared/*"
+      ],
+      "@canchas/*": [
+        "src/modules/canchas/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

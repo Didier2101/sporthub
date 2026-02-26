@@ -1,0 +1,32 @@
+# -------- FRONTEND (Next.js / Node) --------
+node_modules/
+.next/
+out/
+build/
+npm-debug.log
+yarn-error.log
+
+# -------- BACKEND (Python / FastAPI) --------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+.tox/
+
+# -------- ENVIRONMENT VARIABLES --------
+# ¡Nunca subir archivos con secretos o contraseñas!
+.env
+.env.*
+!.env.example
+
+# -------- SISTEMAS OPERATIVOS Y EDITORES --------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

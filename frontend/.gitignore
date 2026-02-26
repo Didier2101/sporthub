@@ -1,0 +1,36 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Next.js
+.next/
+out/
+
+
+# Carpetas temporales
+tmp/
+temp/
+*.log
+
+# Configuración del editor o IDE
+.vscode/
+.idea/
+*.swp
+
+# Archivos de dependencias comunes
+node_modules/
+venv/
+.env
+
+# Archivos compilados o generados
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de entorno o secretos
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
